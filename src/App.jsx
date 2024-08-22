@@ -1,8 +1,13 @@
 import { useState } from "react";
 import "./App.css";
+import About from "./components/About";
+import Banner from "./components/Banner";
 
 function App() {
-  return;
+  <>
+    <About />
+    <Banner />
+  </>;
 }
 
 export default App;
