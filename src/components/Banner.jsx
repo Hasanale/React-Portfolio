@@ -1,7 +1,11 @@
 import React from "react";
 
 function Banner() {
-  return <div>Banner</div>;
+  return (
+    <div className="section" id="home">
+      Banner
+    </div>
+  );
 }
 
 export default Banner;
