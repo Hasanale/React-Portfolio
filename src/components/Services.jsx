@@ -1,7 +1,5 @@
 import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
-import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
 
 const services = [
   {
@@ -16,12 +14,12 @@ const services = [
       "Im a dedicated web developer with a passion for crafting responsive, user-friendly, and visually engaging websites. With 1  year of experience.",
     link: "Learn more",
   },
-  // {
-  //   name: "Digital Marketing",
-  //   description:
-  //     "Im a dedicated web developer with a passion for crafting responsive, user-friendly, and visually engaging websites. With 1  year of experience.",
-  //   link: "Learn more",
-  // },
+  {
+    name: "Digital Marketing",
+    description:
+      "Im a dedicated web developer with a passion for crafting responsive, user-friendly, and visually engaging websites. With 1  year of experience.",
+    link: "Learn more",
+  },
 ];
 function Services() {
   return (
@@ -29,27 +27,16 @@ function Services() {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row ">
           {/* text */}
-          <motion.div
-            variants={fadeIn("right", 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-          >
+          <div className="flex-1">
             <h2 className="h2 text-accent mb-6 ">What I Offer.</h2>
             <h3 className="h3 max-w-[455px] mb-16">
               I'm a dedicated web developer with a passion for crafting
               responsive websites.
             </h3>
             <button className="btn btn-sm">See My Work</button>
-          </motion.div>
+          </div>
           {/* services */}
-          <motion.div
-            variants={fadeIn("left", 0.5)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="flex-1 "
-          >
+          <div className="flex-1 ">
             {/* services list */}
             <div>
               {services.map((services, index) => {
@@ -82,7 +69,7 @@ function Services() {
                 );
               })}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>

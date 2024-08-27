@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 function Header() {
   return (
     <header className=" py-8">
@@ -7,7 +8,11 @@ function Header() {
           <a href="#" className="text-gradient text-4xl font-bold">
             HA
           </a>
-          <button className="btn btn-sm">Work with me</button>
+          <button className="btn btn-sm">
+            <Link to="contact" smooth={true} spy={true} offset={-200}>
+              Work with me
+            </Link>
+          </button>
         </div>
       </div>
     </header>

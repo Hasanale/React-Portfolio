@@ -6,18 +6,20 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
+import Timeline from "./components/Timeline";
 
 function App() {
   return (
-    <div className="bg-site bg-no-repeat bg-cover overflow-hidden">
+    <div className="bg-black">
       <Header />
       <Banner />
       <Nav />
       <About />
-      <Services />
+      <Timeline />
+      {/* <Services />
       <Work />
-      <Contact />
-      <div className="h-[4000px]"></div>
+      <Contact /> */}
+      {/* <div className="h-[4000px]"></div> */}
     </div>
   );
 }
