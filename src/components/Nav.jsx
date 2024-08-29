@@ -27,7 +27,7 @@ function Nav() {
             <BiUser />
           </Link>
           <Link
-            to="services"
+            to="history"
             activeClass="active"
             smooth={true}
             spy={true}
@@ -36,7 +36,7 @@ function Nav() {
             <BsClipboardData />
           </Link>
           <Link
-            to="work"
+            to="skills"
             activeClass="active"
             smooth={true}
             spy={true}

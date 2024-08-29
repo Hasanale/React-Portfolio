@@ -11,8 +11,8 @@ function Timeline() {
   return (
     <div id="history">
       <div className="items-container">
-        <h1 className="h2 text-accent text-center text-[55px]">
-          Career History
+        <h1 className="h2 text-accent text-center text-[55px] mb-20">
+          Experience
         </h1>
         <VerticalTimeline className="vertical-timeline">
           {/* Technology Consultant */}
@@ -70,24 +70,6 @@ function Timeline() {
             </h4>
             <p className="text-[rgb(39,40,34)]">
               Full-stack Development, API Development, User Experience
-            </p>
-          </VerticalTimelineElement>
-
-          {/* Data Analyst Intern */}
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2020"
-            iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
-            icon={<FontAwesomeIcon icon={faBriefcase} className="text-white" />}
-          >
-            <h3 className="vertical-timeline-element-title text-[26px] font-bold text-[rgb(39,40,34)]">
-              Data Analyst Intern
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle font-bold text-[rgb(39,40,34)]">
-              Tokyo, Japan
-            </h4>
-            <p className="text-[rgb(39,40,34)]">
-              Automation, Data Governance, Statistical Analysis
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
