@@ -5,6 +5,16 @@ import { MdDownload } from "react-icons/md";
 import { Link } from "react-scroll";
 
 function Banner() {
+  const PDF_FILE_URL = "http://localhost:5173/Hassan-Resume.pdf";
+  const downloadFileAtURL = (url) => {
+    const fileName = url.split("/").pop();
+    const aTag = document.createElement("a");
+    aTag.href = url;
+    aTag.setAttribute("download", fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
   return (
     <section
       className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
@@ -17,7 +27,7 @@ function Banner() {
             <h1 className="text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-tight">
               Hassan <span>Ali</span>
             </h1>
-            <div className="mb-6 text-[24px] md:text-[30px] lg:text-[40px] font-secondary uppercase font-semibold leading-none">
+            <div className="mb-2  text-[24px] md:text-[30px] lg:text-[40px] font-secondary uppercase font-semibold leading-none">
               <span className="text-white mr-2">I am a </span>
               <TypeAnimation
                 sequence={[
@@ -34,11 +44,11 @@ function Banner() {
                 className="text-accent"
               />
             </div>
-            <p className="mb-8 max-w-md mx-auto lg:mx-0">
+            <p className="mb-1 max-w-md mx-auto lg:mx-0">
               I'm a dedicated web developer with a passion for crafting
-              responsive, user-friendly, and visually engaging websites. With 1
-              year of experience, I specialize in HTML, CSS, JavaScript, and
-              modern frameworks like React and Tailwind CSS.
+              responsive, user-friendly, and visually engaging websites. I
+              specialize in HTML, CSS, JavaScript, and modern frameworks like
+              React and Tailwind CSS.
             </p>
             <div className="flex justify-center lg:justify-start text-[20px] gap-x-6 mb-6">
               <a href="#">
@@ -57,13 +67,15 @@ function Banner() {
                   Contact me
                 </Link>
               </button>
-              <a
-                href="#"
-                className="flex items-center text-gradient btn-link gap-x-2"
+              <button
+                onClick={() => {
+                  downloadFileAtURL(PDF_FILE_URL);
+                }}
+                className="flex items-center text-gradient gap-x-2"
               >
                 My Resume
                 <MdDownload className="text-white text-[20px]" />
-              </a>
+              </button>
             </div>
           </div>
           {/* Code Section */}

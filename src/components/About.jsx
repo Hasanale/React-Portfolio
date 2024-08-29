@@ -56,9 +56,9 @@ function About() {
             </div>
           </div>
           {/* Image section */}
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-center">
             <img
-              className="grayscale w-3/4 sm:w-1/2 lg:w-3/4 rounded-full"
+              className=" w-3/4 sm:w-1/2 lg:w-3/4 rounded-full border-fuchsia-600 border-solid border-8"
               src={Image}
               alt=""
             />

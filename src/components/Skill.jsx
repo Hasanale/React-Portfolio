@@ -1,6 +1,7 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import { skillsImage } from "../components/skill-image";
+// import Image from "next/image";
+// import { skillsImage } from "../components/skill-image";
 import { skillsData } from "../components/skills";
 
 function Skill() {
