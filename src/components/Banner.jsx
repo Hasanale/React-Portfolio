@@ -6,16 +6,19 @@ import { Link } from "react-scroll";
 
 function Banner() {
   return (
-    <section className="min-h-[85vh] lg:min-h-[78vh] items-center" id="home">
+    <section
+      className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
+      id="home"
+    >
       <div className="container mx-auto">
-        <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center justify-center lg:gap-x-12 ">
-          {/* text */}
-          <div className="flex-1 w-[50%] text-center font-secondary lg:text-left ">
-            <h1 className="text-[50px] font-bold leading-[0.8] lg:text-[80px]">
+        <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center justify-center lg:gap-x-12">
+          {/* Text Section */}
+          <div className="flex-1 text-center lg:text-left">
+            <h1 className="text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-tight">
               Hassan <span>Ali</span>
             </h1>
-            <div className="mb-6 text-[30px] lg:text-[40px] font-secondary uppercase font-semibold leading-[1]">
-              <span className="text-white mr-4">I am a </span>
+            <div className="mb-6 text-[24px] md:text-[30px] lg:text-[40px] font-secondary uppercase font-semibold leading-none">
+              <span className="text-white mr-2">I am a </span>
               <TypeAnimation
                 sequence={[
                   "Web Developer",
@@ -31,13 +34,13 @@ function Banner() {
                 className="text-accent"
               />
             </div>
-            <p className="mb-8 mx-w-lg mx-auto lg:max-0 ">
+            <p className="mb-8 max-w-md mx-auto lg:mx-0">
               I'm a dedicated web developer with a passion for crafting
               responsive, user-friendly, and visually engaging websites. With 1
               year of experience, I specialize in HTML, CSS, JavaScript, and
               modern frameworks like React and Tailwind CSS.
             </p>
-            <div className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 mb-6">
+            <div className="flex justify-center lg:justify-start text-[20px] gap-x-6 mb-6">
               <a href="#">
                 <FaFacebook />
               </a>
@@ -48,7 +51,7 @@ function Banner() {
                 <FaLinkedin />
               </a>
             </div>
-            <div className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0">
+            <div className="flex justify-center lg:justify-start gap-x-6 items-center mb-12">
               <button className="btn btn-lg">
                 <Link to="contact" smooth={true} spy={true} offset={-200}>
                   Contact me
@@ -63,18 +66,12 @@ function Banner() {
               </a>
             </div>
           </div>
-          {/* code */}
-          <div className="w-[50%] from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37]">
-            <div className="flex flex-row">
-              <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
-              <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
-            </div>
-            <div className="px-4 lg:px-8 py-5">
-              <div className="flex flex-row space-x-2">
-                <div className="h-3 w-3 rounded-full bg-red-400"></div>
-                <div className="h-3 w-3 rounded-full bg-orange-400"></div>
-                <div className="h-3 w-3 rounded-full bg-green-200"></div>
-              </div>
+          {/* Code Section */}
+          <div className="flex-1 w-full lg:w-auto p-4 bg-gradient-to-r from-[#0d1224] to-[#0a0d37] border border-[#1b2c68a0] rounded-lg relative">
+            <div className="flex justify-between mb-4">
+              <div className="h-3 w-3 rounded-full bg-red-400"></div>
+              <div className="h-3 w-3 rounded-full bg-orange-400"></div>
+              <div className="h-3 w-3 rounded-full bg-green-200"></div>
             </div>
             <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
               <code className="font-mono text-xs md:text-sm lg:text-base">
@@ -91,7 +88,7 @@ function Banner() {
                   <span className="text-gray-400">{`',`}</span>
                 </div>
                 <div className="ml-4 lg:ml-8 mr-2">
-                  <span className=" text-white">skills:</span>
+                  <span className="text-white">skills:</span>
                   <span className="text-gray-400">{`['`}</span>
                   <span className="text-amber-300">HTML</span>
                   <span className="text-gray-400">{"', '"}</span>

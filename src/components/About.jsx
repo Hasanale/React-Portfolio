@@ -11,7 +11,9 @@ function About() {
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-15 lg:gap-y-0 h-screen lg:justify-center lg:w-[700px]">
           <div className="flex-1">
-            <h2 className="h2 text-accent  text-[55px]">About Me</h2>
+            <h2 className="h2 text-accent  text-[45px] lg:text-[55px]">
+              About Me
+            </h2>
             <h3 className="h3 mb-4 ">I'm a dedicated web developer.</h3>
             <p className="mb-6">
               I'm a dedicated web developer with a passion for crafting

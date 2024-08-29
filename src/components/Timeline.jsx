@@ -11,7 +11,7 @@ function Timeline() {
   return (
     <div id="history">
       <div className="items-container">
-        <h1 className="h2 text-accent text-center text-[55px] mb-20">
+        <h1 className="h2 text-accent text-center text-[45px] lg:text-[55px] mb-20">
           Experience
         </h1>
         <VerticalTimeline className="vertical-timeline">
