@@ -24,7 +24,7 @@ function About() {
               modern frameworks like React and Tailwind CSS.
             </p>
             {/* Stats */}
-            <div className="flex flex-wrap justify-center sm:justify-start gap-x-6 gap-y-6 lg:gap-x-10 mb-12">
+            <div className="flex flex-row md:flex-wrap justify-center sm:justify-start gap-x-6 gap-y-6 lg:gap-x-10 mb-12">
               <div className="w-full sm:w-auto text-center sm:text-left">
                 <div className="text-[30px] sm:text-[35px] lg:text-[40px] font-tertiary text-gradient mb-2">
                   {inView ? <CountUp start={0} end={3} duration={3} /> : null}+
