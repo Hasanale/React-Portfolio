@@ -26,7 +26,7 @@ function Contact() {
 
   return (
     <div className="py-16 pb-20" id="contact">
-      <div className="flex mt-10 justify-center -translate-y-[1px]">
+      <div className="flex mt-10 mb-20 justify-center -translate-y-[1px]">
         <div className="w-3/4">
           <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full"></div>
         </div>
