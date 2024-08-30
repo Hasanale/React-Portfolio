@@ -1,29 +1,47 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import html from "../../public/skills/html.svg";
+import css from "../../public/skills/css.svg";
+import javascript from "../../public/skills/javascript.svg";
+import react from "../../public/skills/react.svg";
+import tailwind from "../../public/skills/tailwind.svg";
+import mysql from "../../public/skills/mysql.svg";
+import git from "../../public/skills/git.svg";
+import bootstrap from "../../public/skills/bootstrap.svg";
+import figma from "../../public/skills/figma.svg";
+import firebase from "../../public/skills/firebase.svg";
+import materialui from "../../public/skills/materialui.svg";
+import photoshop from "../../public/skills/photoshop.svg";
+import illustrator from "../../public/skills/illustrator.svg";
+import microsoftoffice from "../../public/skills/microsoftoffice.svg";
+import wordpress from "../../public/skills/wordpress.svg";
+import vitejs from "../../public/skills/vitejs.svg";
+import adobexd from "../../public/skills/adobe-xd.svg";
+import canva from "../../public/skills/canva.svg";
 
 function Skill() {
   const skillsData = [
-    { name: "HTML", image: "../../public/skills/html.svg" },
-    { name: "CSS", image: "../../public/skills/css.svg" },
-    { name: "JavaScript", image: "../../public/skills/javascript.svg" },
-    { name: "React", image: "../../public/skills/react.svg" },
-    { name: "Tailwind", image: "../../public/skills/tailwind.svg" },
-    { name: "MySQL", image: "../../public/skills/mysql.svg" },
-    { name: "Git", image: "../../public/skills/git.svg" },
-    { name: "Bootstrap", image: "../../public/skills/bootstrap.svg" },
-    { name: "Figma", image: "../../public/skills/figma.svg" },
-    { name: "Firebase", image: "../../public/skills/firebase.svg" },
-    { name: "MaterialUI", image: "../../public/skills/materialui.svg" },
-    { name: "Photoshop", image: "../../public/skills/photoshop.svg" },
-    { name: "Illustrator", image: "../../public/skills/illustrator.svg" },
+    { name: "HTML", image: html },
+    { name: "CSS", image: css },
+    { name: "JavaScript", image: javascript },
+    { name: "React", image: react },
+    { name: "Tailwind", image: tailwind },
+    { name: "MySQL", image: mysql },
+    { name: "Git", image: git },
+    { name: "Bootstrap", image: bootstrap },
+    { name: "Figma", image: figma },
+    { name: "Firebase", image: firebase },
+    { name: "MaterialUI", image: materialui },
+    { name: "Photoshop", image: photoshop },
+    { name: "Illustrator", image: illustrator },
     {
       name: "MS Office",
-      image: "../../public/skills/microsoftoffice.svg",
+      image: microsoftoffice,
     },
-    { name: "WordPress", image: "../../public/skills/wordpress.svg" },
-    { name: "ViteJS", image: "../../public/skills/vitejs.svg" },
-    { name: "Adobe XD", image: "../../public/skills/adobe-xd.svg" },
-    { name: "Canva", image: "../../public/skills/canva.svg" },
+    { name: "WordPress", image: wordpress },
+    { name: "ViteJS", image: vitejs },
+    { name: "Adobe XD", image: adobexd },
+    { name: "Canva", image: canva },
   ];
 
   return (
