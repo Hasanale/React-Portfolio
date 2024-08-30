@@ -39,7 +39,7 @@ function Contact() {
               <h4 className="text-[40px] uppercase text-accent font-medium mb-2 tracking-wide">
                 Get in touch
               </h4>
-              <h2 className="text-[55px] lg:text[90px] leading-none mb-12 ">
+              <h2 className="text-[55px] lg:text-[90px] leading-none mb-12 ">
                 Let's work <br /> together!
               </h2>
             </div>
@@ -47,7 +47,7 @@ function Contact() {
           {/* form */}
           <form
             onSubmit={onSubmit}
-            className="flex-1 mt-14 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"
+            className="flex-1 mt-14 border rounded-2xl flex flex-col gap-y-6 pb-10 p-6 items-start"
           >
             <input
               required

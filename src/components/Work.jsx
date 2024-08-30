@@ -1,13 +1,11 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
 import Img1 from "../assets/portfolio-img1.png";
 import Img2 from "../assets/portfolio-img2.png";
 import Img3 from "../assets/portfolio-img3.png";
 
 function Work() {
   return (
-    <section className="section" id="work">
+    <section className="section" id="skills">
       <div className="container max-auto">
         <div className="flex flex-col lg:flex-row gap-x-10">
           <div className="flex-1 flex flex-col gap-y-6 mb-10 lg:mb-0 ">

@@ -10,8 +10,13 @@ import "react-vertical-timeline-component/style.min.css";
 function Timeline() {
   return (
     <div id="history">
+      <div class="flex mt-10 justify-center -translate-y-[1px]">
+        <div class="w-3/4">
+          <div class="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full"></div>
+        </div>
+      </div>
       <div className="items-container">
-        <h1 className="h2 text-accent text-center text-[45px] lg:text-[55px] mb-20">
+        <h1 className="h2 mt-20 text-accent text-center text-[45px] lg:text-[55px] mb-20">
           Experience
         </h1>
         <VerticalTimeline className="vertical-timeline">

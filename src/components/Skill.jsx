@@ -1,26 +1,47 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-// import Image from "next/image";
-// import { skillsImage } from "../components/skill-image";
-import { skillsData } from "../components/skills";
 
 function Skill() {
+  const skillsData = [
+    { name: "HTML", image: "../../public/skills/html.svg" },
+    { name: "CSS", image: "../../public/skills/css.svg" },
+    { name: "JavaScript", image: "../../public/skills/javascript.svg" },
+    { name: "React", image: "../../public/skills/react.svg" },
+    { name: "Tailwind", image: "../../public/skills/tailwind.svg" },
+    { name: "MySQL", image: "../../public/skills/mysql.svg" },
+    { name: "Git", image: "../../public/skills/git.svg" },
+    { name: "Bootstrap", image: "../../public/skills/bootstrap.svg" },
+    { name: "Figma", image: "../../public/skills/figma.svg" },
+    { name: "Firebase", image: "../../public/skills/firebase.svg" },
+    { name: "MaterialUI", image: "../../public/skills/materialui.svg" },
+    { name: "Photoshop", image: "../../public/skills/photoshop.svg" },
+    { name: "Illustrator", image: "../../public/skills/illustrator.svg" },
+    {
+      name: "MS Office",
+      image: "../../public/skills/microsoftoffice.svg",
+    },
+    { name: "WordPress", image: "../../public/skills/wordpress.svg" },
+    { name: "ViteJS", image: "../../public/skills/vitejs.svg" },
+    { name: "Adobe XD", image: "../../public/skills/adobe-xd.svg" },
+    { name: "Canva", image: "../../public/skills/canva.svg" },
+  ];
+
   return (
     <div
       id="skills"
       className="relative border-t my-12 lg:my-24 border-[#25213b]"
     >
-      <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
+      <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl opacity-20"></div>
 
       <div className="flex justify-center -translate-y-[1px]">
         <div className="w-3/4">
-          <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />
+          <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent w-full" />
         </div>
       </div>
 
       <div className="flex justify-center my-5 lg:py-8">
-        <div className="flex  items-center">
-          <span className="h2 text-accent  text-[55px]">Skills</span>
+        <div className="flex items-center">
+          <span className="h2 text-accent text-[55px]">Skills</span>
         </div>
       </div>
 
@@ -47,15 +68,15 @@ function Skill() {
                 </div>
                 <div className="flex flex-col items-center justify-center gap-3 p-6">
                   <div className="h-8 sm:h-10">
-                    {/* <Image
-                      src={skillsImage(skill)?.src}
-                      alt={skill}
+                    <img
+                      src={skill.image}
+                      alt={skill.name}
                       width={40}
                       height={40}
                       className="h-full w-auto rounded-lg"
-                    /> */}
+                    />
                   </div>
-                  <p className="text-white text-sm sm:text-lg">{skill}</p>
+                  <p className="text-white text-sm sm:text-lg">{skill.name}</p>
                 </div>
               </div>
             </div>

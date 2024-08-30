@@ -1,18 +1,22 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
-import { Link } from "react-scroll";
 import Image from "../assets/profile.jpg";
 
 function About() {
   const [ref, inView] = useInView({ threshold: 0.5 });
   return (
-    <section className="section" id="about" ref={ref}>
+    <div id="about" ref={ref}>
+      <div class="flex mt-20 justify-center -translate-y-[1px]">
+        <div class="w-3/4">
+          <div class="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full"></div>
+        </div>
+      </div>
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-y-8 lg:gap-y-0 lg:h-screen justify-center">
           {/* Text section */}
           <div className="w-full lg:w-1/2 px-4 lg:px-8">
-            <h2 className="text-accent text-[35px] sm:text-[45px] lg:text-[55px] font-bold mb-4">
+            <h2 className="h2 text-accent text-[45px] lg:text-[55px] mb-20">
               About Me
             </h2>
             <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-4">
@@ -58,14 +62,14 @@ function About() {
           {/* Image section */}
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-center">
             <img
-              className=" w-3/4 sm:w-1/2 lg:w-3/4 rounded-full border-fuchsia-600 border-solid border-8"
+              className="grayscale w-3/4 sm:w-1/2 lg:w-3/4 rounded-full border-fuchsia-600 border-solid border-8"
               src={Image}
               alt=""
             />
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

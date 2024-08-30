@@ -80,7 +80,7 @@ function Banner() {
           </div>
           {/* Code Section */}
           <div className="flex-1 w-full lg:w-auto p-4 bg-gradient-to-r from-[#0d1224] to-[#0a0d37] border border-[#1b2c68a0] rounded-lg relative">
-            <div className="flex justify-between mb-4">
+            <div className="flex justify-start mb-4 space-x-2">
               <div className="h-3 w-3 rounded-full bg-red-400"></div>
               <div className="h-3 w-3 rounded-full bg-orange-400"></div>
               <div className="h-3 w-3 rounded-full bg-green-200"></div>
