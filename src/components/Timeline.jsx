@@ -10,17 +10,12 @@ import "react-vertical-timeline-component/style.min.css";
 function Timeline() {
   return (
     <div id="history">
-      <div class="flex mt-10 justify-center -translate-y-[1px]">
-        <div class="w-3/4">
-          <div class="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full"></div>
-        </div>
-      </div>
       <div className="items-container">
         <h1 className="h2 mt-20 text-accent text-center text-[45px] lg:text-[55px] mb-20">
           Experience
         </h1>
         <VerticalTimeline className="vertical-timeline">
-          {/* Technology Consultant */}
+          {/* Wistech */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "white", color: "rgb(39, 40, 34)" }}
@@ -30,18 +25,18 @@ function Timeline() {
             icon={<FontAwesomeIcon icon={faBriefcase} className="text-white" />}
           >
             <h3 className="vertical-timeline-element-title text-[26px] font-bold text-[rgb(39,40,34)]">
-              Technology Consultant
+              Wisdom IT Solutions
             </h3>
             <h4 className="vertical-timeline-element-subtitle font-bold text-[rgb(39,40,34)]">
-              Dallas, TX
+              On-site
             </h4>
             <p className="text-[rgb(39,40,34)]">
-              Full-stack Web Development, GenAI/LLM, Project Management,
-              Business Development
+              Frontend Developer. HTML, CSS, Bootstrap, JavaScript, React JS,
+              Tailwind CSS, Git
             </p>
           </VerticalTimelineElement>
 
-          {/* Full Stack Engineer */}
+          {/*  */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2020 - 2022"

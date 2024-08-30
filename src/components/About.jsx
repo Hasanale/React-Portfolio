@@ -7,16 +7,11 @@ function About() {
   const [ref, inView] = useInView({ threshold: 0.5 });
   return (
     <div id="about" ref={ref}>
-      <div class="flex mt-20 justify-center -translate-y-[1px]">
-        <div class="w-3/4">
-          <div class="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full"></div>
-        </div>
-      </div>
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-y-8 lg:gap-y-0 lg:h-screen justify-center">
           {/* Text section */}
           <div className="w-full lg:w-1/2 px-4 lg:px-8">
-            <h2 className="h2 text-accent text-[45px] lg:text-[55px] mb-20">
+            <h2 className="mt-20 h2 text-accent text-[45px] lg:text-[55px] mb-20">
               About Me
             </h2>
             <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-4">
@@ -29,8 +24,8 @@ function About() {
               modern frameworks like React and Tailwind CSS.
             </p>
             {/* Stats */}
-            <div className="flex flex-wrap gap-x-6 gap-y-4 lg:gap-x-10 mb-12">
-              <div className="w-1/2 sm:w-auto">
+            <div className="flex flex-wrap justify-center sm:justify-start gap-x-6 gap-y-6 lg:gap-x-10 mb-12">
+              <div className="w-full sm:w-auto text-center sm:text-left">
                 <div className="text-[30px] sm:text-[35px] lg:text-[40px] font-tertiary text-gradient mb-2">
                   {inView ? <CountUp start={0} end={3} duration={3} /> : null}+
                 </div>
@@ -39,7 +34,7 @@ function About() {
                   Experience
                 </div>
               </div>
-              <div className="w-1/2 sm:w-auto">
+              <div className="w-full sm:w-auto text-center sm:text-left">
                 <div className="text-[30px] sm:text-[35px] lg:text-[40px] font-tertiary text-gradient mb-2">
                   {inView ? <CountUp start={0} end={15} duration={3} /> : null}+
                 </div>
@@ -48,7 +43,7 @@ function About() {
                   Completed
                 </div>
               </div>
-              <div className="w-1/2 sm:w-auto">
+              <div className="w-full sm:w-auto text-center sm:text-left">
                 <div className="text-[30px] sm:text-[35px] lg:text-[40px] font-tertiary text-gradient mb-2">
                   {inView ? <CountUp start={0} end={10} duration={3} /> : null}+
                 </div>
