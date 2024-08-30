@@ -5,6 +5,10 @@ function Contact() {
     event.preventDefault();
     const formData = new FormData(event.target);
 
+    // Get the name value from the form and set it as the subject
+    const name = formData.get("name");
+    formData.append("subject", `${name} sent a message from portfolio`);
+
     formData.append("access_key", "db697ad9-6737-4208-b41f-b239a4b1df65");
 
     const object = Object.fromEntries(formData);
@@ -25,10 +29,10 @@ function Contact() {
   };
 
   return (
-    <div className="py-16 pb-20" id="contact">
+    <div className="pt-16 pb-20" id="contact">
       <div className="flex mt-10 mb-20 justify-center -translate-y-[1px]">
         <div className="w-3/4">
-          <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full"></div>
+          <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent w-full"></div>
         </div>
       </div>
       <div className="container mx-auto">
@@ -70,8 +74,10 @@ function Contact() {
               name="message"
               id="message"
               className="bg-transparent border-b py-2 outline-none w-full placeholder:text-white focus:border-accent translation-al mb-12"
-              placeholder="You message"
+              placeholder="Your message"
             ></textarea>
+            <input type="hidden" name="subject" />
+            <input type="hidden" name="redirect" value="" />
             <button type="submit" className="btn btn-lg">
               Send Message
             </button>

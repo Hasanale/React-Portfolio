@@ -6,7 +6,7 @@ import Skill from "./components/Skill";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Timeline from "./components/Timeline";
-
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="bg-black">
@@ -18,6 +18,7 @@ function App() {
       <Skill />
       <Work />
       <Contact />
+      <Footer />
     </div>
   );
 }
