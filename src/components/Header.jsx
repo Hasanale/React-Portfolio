@@ -8,11 +8,9 @@ function Header() {
           <a href="#" className="text-gradient text-4xl font-bold">
             HA
           </a>
-          <button className="btn btn-sm">
-            <Link to="contact" smooth={true} spy={true} offset={-200}>
-              Work with me
-            </Link>
-          </button>
+          <Link to="contact" smooth={true} spy={true} offset={-200}>
+            <button className="btn btn-sm">Work with me</button>
+          </Link>
         </div>
       </div>
     </header>

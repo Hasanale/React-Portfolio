@@ -69,11 +69,9 @@ function Banner() {
               </a>
             </div>
             <div className="flex flex-col sm:flex-row gap-y-4 md:flex-row lg:flex-row justify-center lg:justify-start gap-x-6 items-center mb-12">
-              <button className="btn btn-lg">
-                <Link to="contact" smooth={true} spy={true} offset={-200}>
-                  Contact me
-                </Link>
-              </button>
+              <Link to="contact" smooth={true} spy={true} offset={-200}>
+                <button className="btn btn-lg">Contact me</button>
+              </Link>
               <button
                 onClick={() => {
                   downloadFileAtURL(PDF_FILE_URL);
