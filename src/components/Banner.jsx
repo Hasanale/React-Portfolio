@@ -5,7 +5,7 @@ import { MdDownload } from "react-icons/md";
 import { Link } from "react-scroll";
 
 function Banner() {
-  const PDF_FILE_URL = "http://localhost:5173/Hassan-Resume.pdf";
+  const PDF_FILE_URL = "https://hassan-ali.vercel.app/Hassan-Resume.pdf";
   const downloadFileAtURL = (url) => {
     const fileName = url.split("/").pop();
     const aTag = document.createElement("a");
