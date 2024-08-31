@@ -25,7 +25,9 @@ function Banner() {
               Hassan <span>Ali</span>
             </h1>
             <div className="mb-1  text-[24px] md:text-[30px] lg:text-[40px] font-secondary uppercase font-semibold leading-none">
-              <span className="text-white mr-2">I am a </span>
+              <span className="light-mode-placeholder dark:dark-mode-placeholder mr-2">
+                I am a{" "}
+              </span>
               <TypeAnimation
                 sequence={[
                   "Web Developer",
