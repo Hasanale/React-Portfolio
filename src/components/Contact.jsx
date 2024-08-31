@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Contact() {
+  const [notification, setNotofication] = useState("");
+  const [showNotification, setShowNotification] = useState(false);
+
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -24,13 +27,18 @@ function Contact() {
     }).then((res) => res.json());
 
     if (res.success) {
-      alert(res.message);
+      setNotofication(res.message);
+      setShowNotification(true);
+
+      setTimeout(() => {
+        setShowNotification(false);
+      }, 3000);
     }
   };
 
   return (
-    <div className="pt-16 pb-20" id="contact">
-      <div className="flex mt-10 mb-20 justify-center -translate-y-[1px]">
+    <div className="pt-32 pb-20" id="contact">
+      <div className="flex  mb-20 justify-center -translate-y-[1px]">
         <div className="w-3/4">
           <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent w-full"></div>
         </div>
@@ -57,30 +65,31 @@ function Contact() {
               required
               name="name"
               id="name"
-              className="bg-transparent border-b py-1 outline-none w-full placeholder:text-white focus:border-accent  translation-all"
+              className="bg-transparent border-b py-1 outline-none w-full light-mode-input light-mode-placeholder dark:dark-mode-input dark:dark-mode-placeholder focus:border-accent transition-all"
               type="text"
-              placeholder="Your name"
+              placeholder="Name"
             />
             <input
               required
               name="email"
               id="email"
-              className="bg-transparent border-b py-1 outline-none w-full placeholder:text-white focus:border-accent  translation-all"
+              className="bg-transparent border-b py-1 outline-none w-full light-mode-input light-mode-placeholder dark:dark-mode-input focus:border-accent transition-all"
               type="text"
-              placeholder="Your email"
+              placeholder="Email"
             />
             <textarea
               required
               name="message"
               id="message"
-              className="bg-transparent border-b py-2 outline-none w-full placeholder:text-white focus:border-accent translation-al mb-12"
-              placeholder="Your message"
+              className="bg-transparent border-b py-2 outline-none w-full light-mode-input light-mode-placeholder dark:dark-mode-input dark:dark-mode-placeholder focus:border-accent transition-all mb-12"
+              placeholder="Message"
             ></textarea>
+
             <input type="hidden" name="subject" />
-            <input type="hidden" name="redirect" value="" />
             <button type="submit" className="btn btn-lg">
               Send Message
             </button>
+            {showNotification && <div>{notification}</div>}
           </form>
         </div>
       </div>

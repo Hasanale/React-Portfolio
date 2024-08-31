@@ -7,19 +7,48 @@ import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Timeline from "./components/Timeline";
 import Footer from "./components/Footer";
+
+import React, { useState } from "react";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import { Switch } from "@mui/material";
 function App() {
+  const [toggleDarkMode, setToggleDarkMode] = useState(true);
+
+  const toggleDarkTheme = () => {
+    setToggleDarkMode(!toggleDarkMode);
+  };
+
+  const darkTheme = createTheme({
+    palette: {
+      mode: toggleDarkMode ? "dark" : "light", // handle the dark mode state on toggle
+      primary: {
+        main: "#90caf9",
+      },
+      secondary: {
+        main: "#131052",
+      },
+    },
+  });
+
   return (
-    <div className="bg-black">
-      <Header />
-      <Banner />
-      <Nav />
-      <About />
-      <Timeline />
-      <Skill />
-      <Work />
-      <Contact />
-      <Footer />
-    </div>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <div>
+        <h2>Switch Theme</h2>
+        <Switch checked={toggleDarkMode} onChange={toggleDarkTheme} />
+
+        <Header />
+        <Banner />
+        <Nav />
+        <About />
+        <Timeline />
+        <Skill />
+        <Work />
+        <Contact />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 

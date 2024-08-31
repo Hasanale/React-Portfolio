@@ -40,6 +40,8 @@
   border-radius: 100%;
 }
 
+/* In your global CSS or Tailwind CSS file */
+
 @layer base {
   body {
     @apply font-secondary text-lg leading-8 text-white;
