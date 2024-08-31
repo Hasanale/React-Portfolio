@@ -11,7 +11,9 @@ import Footer from "./components/Footer";
 import React, { useState } from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { Switch } from "@mui/material";
+import { IconButton } from "@mui/material";
+import { LightMode, DarkMode } from "@mui/icons-material";
+
 function App() {
   const [toggleDarkMode, setToggleDarkMode] = useState(true);
 
@@ -35,8 +37,12 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <div>
-        <h2>Switch Theme</h2>
-        <Switch checked={toggleDarkMode} onChange={toggleDarkTheme} />
+        <IconButton
+          onClick={toggleDarkTheme}
+          className="fixed left-[50%] translate-x-[-50%]"
+        >
+          {toggleDarkMode ? <DarkMode /> : <LightMode />}
+        </IconButton>
 
         <Header />
         <Banner />
