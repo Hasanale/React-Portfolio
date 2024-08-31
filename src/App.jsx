@@ -41,7 +41,7 @@ function App() {
           onClick={toggleDarkTheme}
           className="fixed left-[50%] translate-x-[-50%]"
         >
-          {toggleDarkMode ? <DarkMode /> : <LightMode />}
+          {toggleDarkMode ? <LightMode /> : <DarkMode />}
         </IconButton>
 
         <Header />
