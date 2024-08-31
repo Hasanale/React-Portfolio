@@ -8,7 +8,7 @@ function About() {
   return (
     <div id="about" ref={ref}>
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row items-center gap-y-8 lg:gap-y-0 lg:h-screen justify-center">
+        <div className="flex flex-col lg:flex-row items-center gap-y-8 lg:gap-y-0 justify-center">
           {/* Text section */}
           <div className="w-full lg:w-1/2 px-4 lg:px-8">
             <h2 className="mt-20 h2 text-accent text-[45px] lg:text-[55px] mb-20">

@@ -16,10 +16,7 @@ function Banner() {
     aTag.remove();
   };
   return (
-    <section
-      className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
-      id="home"
-    >
+    <section className=" flex items-center" id="home">
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center justify-center lg:gap-x-12">
           {/* Text Section */}

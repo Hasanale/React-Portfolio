@@ -5,7 +5,7 @@ import Img3 from "../assets/portfolio-img3.png";
 
 function Work() {
   return (
-    <section className="section" id="skills">
+    <section id="skills">
       <div className="container ">
         <div className="flex flex-col lg:flex-row gap-x-10">
           <div className="flex-1 flex flex-col gap-y-6 mb-10 lg:mb-0 ">
