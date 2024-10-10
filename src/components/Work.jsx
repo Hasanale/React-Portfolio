@@ -2,7 +2,7 @@ import React from "react";
 import Img1 from "../assets/portfolio-img1.png";
 import Img2 from "../assets/portfolio-img2.png";
 import Img3 from "../assets/portfolio-img3.png";
-import Img4 from "../assets/screencapture-expertshandyman-ae-2024-10-10-15_32_20.png";
+import Img4 from "../assets/Untitled design.png";
 
 function Work() {
   return (
@@ -57,7 +57,7 @@ function Work() {
               {/* img */}
               <img
                 className="group-hover:scale-125 transition-all duration-500 "
-                src={Img2}
+                src={Img4}
                 alt=""
               />
               {/* pre-tittle */}
