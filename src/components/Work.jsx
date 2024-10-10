@@ -57,7 +57,7 @@ function Work() {
               {/* img */}
               <img
                 className="group-hover:scale-125 transition-all duration-500 "
-                src={Img4}
+                src={Img2}
                 alt=""
               />
               {/* pre-tittle */}
