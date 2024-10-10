@@ -25,7 +25,7 @@ function Work() {
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transitio duration-700 z-50 ">
-                <span className="text-3xl text-white ">Project Title</span>
+                <span className="text-3xl text-white "></span>
               </div>
             </div>
             {/* image 2 */}
@@ -40,11 +40,11 @@ function Work() {
               />
               {/* pre-tittle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transitio duration-500 z-50 ">
-                <span className="text-gradient">UI/UX Design</span>
+                <span className="text-gradient">Front-end Design</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transitio duration-700 z-50 ">
-                <span className="text-3xl text-white ">Project Title</span>
+                <span className="text-3xl text-white "></span>
               </div>
             </div>
           </div>
@@ -61,11 +61,11 @@ function Work() {
               />
               {/* pre-tittle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transitio duration-500 z-50 ">
-                <span className="text-gradient">UI/UX Design</span>
+                <span className="text-gradient">WordPress Design</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transitio duration-700 z-50 ">
-                <span className="text-3xl text-white ">Project Title</span>
+                <span className="text-3xl text-white "></span>
               </div>
             </div>
 
@@ -81,11 +81,11 @@ function Work() {
               />
               {/* pre-tittle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transitio duration-500 z-50 ">
-                <span className="text-gradient">UI/UX Design</span>
+                <span className="text-gradient">HTML Design</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transitio duration-700 z-50 ">
-                <span className="text-3xl text-white ">Project Title</span>
+                <span className="text-3xl text-white "></span>
               </div>
             </div>
           </div>

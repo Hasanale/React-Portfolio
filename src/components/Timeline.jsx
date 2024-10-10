@@ -81,15 +81,12 @@ function Timeline() {
             icon={<FontAwesomeIcon icon={faBriefcase} className="text-white" />}
           >
             <h3 className="vertical-timeline-element-title text-[26px] font-bold">
-              Full Stack Engineer
+              Wordpress Developer
             </h3>
             <h4 className="vertical-timeline-element-subtitle font-bold">
-              Laie, HI
+              Freelancing
             </h4>
-            <p>
-              Frontend Development, Backend Development, User Experience, Team
-              Leading
-            </p>
+            <p>Elementor, Elementor Pro, Woo Commerce, Theme Customization</p>
           </VerticalTimelineElement>
 
           {/* Staff Engineer Intern */}
@@ -111,12 +108,12 @@ function Timeline() {
             icon={<FontAwesomeIcon icon={faBriefcase} className="text-white" />}
           >
             <h3 className="vertical-timeline-element-title text-[26px] font-bold">
-              Staff Engineer Intern
+              UI/UX Designer
             </h3>
             <h4 className="vertical-timeline-element-subtitle font-bold">
-              Laie, HI
+              Freelancing
             </h4>
-            <p>Full-stack Development, API Development, User Experience</p>
+            <p>Figma, Adobe xd, PhotoShop</p>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
