@@ -70,7 +70,7 @@ function Nav() {
             {tooltip === "History" && (
               <div className="absolute bottom-[75px] flex flex-col items-center">
                 <div className="bg-gray-800 text-white text-sm px-2 py-1 rounded-md relative">
-                  History
+                  Experience
                   <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-gray-800"></div>
                 </div>
               </div>
