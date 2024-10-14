@@ -67,7 +67,7 @@ function Nav() {
             onMouseLeave={handleMouseLeave}
           >
             <BsClipboardData />
-            {tooltip === "History" && (
+            {tooltip === "Experience" && (
               <div className="absolute bottom-[75px] flex flex-col items-center">
                 <div className="bg-gray-800 text-white text-sm px-2 py-1 rounded-md relative">
                   Experience
