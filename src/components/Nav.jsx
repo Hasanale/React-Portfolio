@@ -63,7 +63,7 @@ function Nav() {
             smooth={true}
             spy={true}
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center relative"
-            onMouseEnter={() => handleMouseEnter("History")}
+            onMouseEnter={() => handleMouseEnter("Experience")}
             onMouseLeave={handleMouseLeave}
           >
             <BsClipboardData />
